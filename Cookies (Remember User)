@@ -1,0 +1,7 @@
+<?php
+setcookie("user", $user['name'], time() + (7 * 24 * 60 * 60));
+
+if (isset($_COOKIE['user'])) {
+    echo "Cookie User: " . $_COOKIE['user'];
+}
+?>
